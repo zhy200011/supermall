@@ -30,12 +30,15 @@
 <script>
 	import tabbar from 'components/common/TabBar/tabbar.vue'
 	import tabbaritem from 'components/common/TabBar/tabbarItem.vue'
-	
+	import {getHomeData} from 'network/home.js'
 	export default{
 		components:{
 			tabbar,
 			tabbaritem,
 		
+		},
+		mounted() {
+			getHomeData()
 		}
 	}
 </script>
