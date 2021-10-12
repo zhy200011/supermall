@@ -7,6 +7,7 @@ const Home= () =>import('views/Home/Home.vue')
 const Profiles= () =>import('views/Profile/Profiles')
 const Aboute= () =>import( 'views/Aboute/Aboute')
 const Chart= () =>import ('views/Chart/Chart')
+const Details= () =>import ('views/details/Details')
 const routes=[
 	{
 		path:'',
@@ -28,6 +29,10 @@ const routes=[
 		path:'/profiles',
 		component:Profiles
 	},
+	{
+		path:'/details/:id',
+		component:Details
+	},
 	
 ]
 // 创建路有对象
@@ -35,5 +40,5 @@ const router= new VueRouter({
 	routes,
 	mode:'history'
 })
-// 到出
+//  
 export default router;

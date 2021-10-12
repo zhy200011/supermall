@@ -1,7 +1,9 @@
 <template>
 	<div class="nav-bar">
 		<div class="left"><slot name="left"></slot></div>
-		<div class="center"><slot name="center"></slot></div>
+		<div class="center">
+			<slot name="center"></slot>
+		</div>
 		<div class="right"><slot name="right"></slot></div>
 	</div>
 </template>
@@ -14,16 +16,16 @@
 
 <style>
 	.nav-bar{
-		position: fixed;
-		width: 100%;
+		position: relative;
 		display: flex;
-		z-index: 1;
+		width: 100%;
+		height:44px;
+
+		z-index: 10;
 		justify-content:space-between ;
 		align-items: center;
-		height:44px;
-		top:0;
-		box-shadow: 0px 1px 1px rgba(100,100,100,1);
 		
+		box-shadow: 0px 1px 1px rgba(100,100,100,1);
 		text-align: center;
 		
 	}
@@ -33,6 +35,8 @@
 		flex: 1;
 	}
 	.center{
+		display: flex;
+		justify-content: space-around;
 		align-items:center;
 		order: 2;
 		flex: 3;

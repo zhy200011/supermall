@@ -1,6 +1,6 @@
 <template>
 	<div id="chart">
-		<h2>详情</h2>
+		<h2>首页</h2>
 	</div>
 </template>
 
